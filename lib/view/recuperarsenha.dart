@@ -23,7 +23,7 @@ class _RecuperarSenhaViewState extends State<RecuperarSenhaView> {
 
     if (!email.contains("@")) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Email inválido")),
+        const SnackBar(content: Text("Email inválido!")),
       );
       return;
     }
@@ -40,7 +40,7 @@ class _RecuperarSenhaViewState extends State<RecuperarSenhaView> {
       return;
     }
 
-    print("Recuperação de senha para: $email");
+    print("Recuperação de senha para a conta: $email");
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -71,7 +71,7 @@ class _RecuperarSenhaViewState extends State<RecuperarSenhaView> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Digite seu email para recuperar sua senha",
+              "Digite o seu email para recuperar sua senha",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
@@ -88,7 +88,7 @@ class _RecuperarSenhaViewState extends State<RecuperarSenhaView> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: _recuperarSenha,
-                child: const Text("Recuperar Senha"),
+                child: const Text("Recuperar a Senha"),
               ),
             ),
           ],
