@@ -164,7 +164,7 @@ class _PagamentoPaginaState extends State<PagamentoPagina> {
                   style: const TextStyle(color: Colors.black87),
                   cursorColor: Colors.pink,
                   decoration: InputDecoration(
-                    labelText: 'Nome no cartão',
+                    labelText: 'Nome completo no cartão',
                     labelStyle: const TextStyle(color: Colors.black54),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16),
